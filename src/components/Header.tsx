@@ -17,10 +17,10 @@ export default function Header({ onContactClick }: HeaderProps) {
                         <nav>
                             <ul className="flex items-center gap-4 md:gap-6 text-base md:text-lg">
                                 <li>
-                                    <a className="text-[#e0def4] transition hover:text-[#eb6f92] hover:underline" href="#"> home </a>
+                                    <a className="text-[#e0def4] transition hover:text-[#c4a7e7] hover:underline" href="#"> home </a>
                                 </li>
                                 <li>
-                                    <a className="text-[#e0def4] transition hover:text-[#eb6f92] hover:underline cursor-pointer" onClick={onContactClick}> contact </a>
+                                    <a className="text-[#e0def4] transition hover:text-[#c4a7e7] hover:underline cursor-pointer" onClick={onContactClick}> contact </a>
                                 </li>
                             </ul>
                         </nav>
