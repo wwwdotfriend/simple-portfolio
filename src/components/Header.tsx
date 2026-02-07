@@ -1,23 +1,27 @@
-export default function Header() {
+interface HeaderProps {
+    onContactClick: () => void
+}
+
+export default function Header({ onContactClick }: HeaderProps) {
     return (
             <header>
                 <div className="flex h-32 items-center justify-between">
                     <div className="flex-1 md:flex md:items-center md:gap-12">
                         <a className="block" href="#">
                             <span className="sr-only">Home</span>
-                            <img src='https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png' className="rounded-full w-16 h-16"></img>
+                            <img src='src/assets/img/dog.jpg' className="rounded-full w-16 h-16"></img>
                         </a>
                     </div>
 
-                    <div className="md:flex md:items-center md:gap-12">
-                        <nav className="hidden md:block">
-                            <ul className="flex items-center gap-6 text-lg">
+                    <div className="flex items-center">
+                        <nav>
+                            <ul className="flex items-center gap-4 md:gap-6 text-base md:text-lg">
                                 <li>
-                                    <a className="text-[#c4a7e7] transition hover:text-[#8b75a7]" href="#"> home </a>
+                                    <a className="text-[#e0def4] transition hover:text-[#eb6f92] hover:underline" href="#"> home </a>
                                 </li>
                                 <li>
-                                    <a className="text-[#c4a7e7] transition hover:text-[#8b75a7]" href="#"> contact </a>
-                                </li>                                
+                                    <a className="text-[#e0def4] transition hover:text-[#eb6f92] hover:underline cursor-pointer" onClick={onContactClick}> contact </a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
