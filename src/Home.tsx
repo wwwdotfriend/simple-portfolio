@@ -3,6 +3,11 @@ import './Home.css'
 import Header from "./components/Header"
 import ContactCard from "./components/ContactCard"
 import externalLink from "./assets/img/external_link.svg"
+import tomenetImg from "./assets/img/tomenet.jpg"
+import gameFacesImg from "./assets/img/game-faces.jpg"
+import potionsellerImg from "./assets/img/potionseller.jpg"
+import monkeymanImg from "./assets/img/monkeyman.jpg"
+import jggImg from "./assets/img/jgg.jpg"
 
 function Home() {
     const [contactOpen, setContactOpen] = useState(false)
@@ -42,7 +47,7 @@ function Home() {
                     <div>
                         <a href='https://github.com/wwwdotfriend/tomenet' target='_blank'>
                             <div className='overflow-hidden rounded-lg relative group mb-3'>
-                                <img src='src/assets/img/tomenet.jpg' className='transition duration-300 group-hover:scale-120'></img>
+                                <img src={tomenetImg} className='transition duration-300 group-hover:scale-120'></img>
                                 <div className='absolute inset-0 bg-[#191724]/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
                                     <img src={externalLink} className='w-10 h-10' />
                                 </div>
@@ -54,7 +59,7 @@ function Home() {
                     <div>
                         <a href='https://github.com/wwwdotfriend/game-faces' target='_blank'>
                             <div className='overflow-hidden rounded-lg relative group mb-3'>
-                                <img src='src/assets/img/game-faces.jpg' className='transition duration-300 group-hover:scale-120'></img>
+                                <img src={gameFacesImg} className='transition duration-300 group-hover:scale-120'></img>
                                 <div className='absolute inset-0 bg-[#191724]/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
                                     <img src={externalLink} className='w-10 h-10' />
                                 </div>
@@ -66,7 +71,7 @@ function Home() {
                     <div>
                         <a href='https://internetfriendstudios.itch.io/potion-seller' target='_blank'>
                             <div className='overflow-hidden rounded-lg relative group mb-3'>
-                                <img src='src/assets/img/potionseller.jpg' className='transition duration-300 group-hover:scale-120'></img>
+                                <img src={potionsellerImg} className='transition duration-300 group-hover:scale-120'></img>
                                 <div className='absolute inset-0 bg-[#191724]/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
                                     <img src={externalLink} className='w-10 h-10' />
                                 </div>
@@ -78,7 +83,7 @@ function Home() {
                     <div>
                         <a href="https://internetfriendstudios.itch.io/cyclethon-america" target='_blank'>
                             <div className='overflow-hidden rounded-lg relative group mb-3'>
-                                <img src='src/assets/img/monkeyman.jpg' className='transition duration-300 group-hover:scale-120'></img>
+                                <img src={monkeymanImg} className='transition duration-300 group-hover:scale-120'></img>
                                 <div className='absolute inset-0 bg-[#191724]/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
                                     <img src={externalLink} className='w-10 h-10' />
                                 </div>
@@ -90,7 +95,7 @@ function Home() {
                     <div>
                         <a href="https://internetfriendstudios.itch.io/just-get-gambling" target='_blank'>
                             <div className='overflow-hidden rounded-lg relative group mb-3'>
-                                <img src='src/assets/img/jgg.jpg' className='transition duration-300 group-hover:scale-120'></img>
+                                <img src={jggImg} className='transition duration-300 group-hover:scale-120'></img>
                                 <div className='absolute inset-0 bg-[#191724]/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
                                     <img src={externalLink} className='w-10 h-10' />
                                 </div>
