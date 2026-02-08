@@ -13,7 +13,7 @@ export default function Header({ onContactClick, isDark, onThemeToggle }: Header
                     <div className="flex-1 md:flex md:items-center md:gap-12">
                         <a className="block group" href="/">
                             <span className="sr-only">Home</span>
-                            <img src={portraitImg} className="rounded-full w-16 h-16 transition duration-300 group-hover:scale-110 group-hover:shadow-[0_0_20px_var(--theme-iris-glow)]"></img>
+                            <img src={portraitImg} alt="Lukas Paredes" className="rounded-full w-16 h-16 transition duration-300 group-hover:scale-110 group-hover:shadow-[0_0_20px_var(--theme-iris-glow)]" />
                         </a>
                     </div>
 
@@ -24,7 +24,7 @@ export default function Header({ onContactClick, isDark, onThemeToggle }: Header
                                     <a className="text-theme-text transition hover:text-theme-icon-hover hover:underline" href="/"> home </a>
                                 </li>
                                 <li>
-                                    <a className="text-theme-text transition hover:text-theme-icon-hover hover:underline cursor-pointer" onClick={onContactClick}> contact </a>
+                                    <a className="text-theme-text transition hover:text-theme-icon-hover hover:underline cursor-pointer" href="#contact" onClick={(e) => { e.preventDefault(); onContactClick(); }}> contact </a>
                                 </li>
                             </ul>
                         </nav>

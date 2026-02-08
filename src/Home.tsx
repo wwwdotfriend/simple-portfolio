@@ -36,7 +36,7 @@ function Home() {
                 Available for work!
             </div>
             </div>
-            <p className='text-lg md:text-2xl'>a multidisciplinary developer with an interest in many subjects. right now, i'm focusing on <span className='font-medium text-theme-gold'>web development</span>, and specializing in full-stack <span className='font-medium text-theme-foam'>TypeScript</span>. i want to make cool things before i die. check out my projects below!</p>
+            <p className='text-lg md:text-2xl'>a multidisciplinary developer building web apps, games, and creative tools. right now, i'm focused on <span className='font-medium text-theme-gold'>web development</span> and specializing in full-stack <span className='font-medium text-theme-foam'>TypeScript</span> with <span className='font-medium text-theme-rose'>React</span>. i want to make cool things before i die. check out my projects below!</p>
             <div className='flex gap-6 md:gap-8 mt-6 md:mt-8'>
                 <a href='mailto:lukasethanparedes@gmail.com' className='text-theme-subtle hover:text-theme-icon-hover transition-colors duration-200'>
                     <svg className='w-12 h-12' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 18L9 12M20 18L15 12M3 8L10.225 12.8166C10.8665 13.2443 11.1872 13.4582 11.5339 13.5412C11.8403 13.6147 12.1597 13.6147 12.4661 13.5412C12.8128 13.4582 13.1335 13.2443 13.775 12.8166L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
@@ -55,76 +55,76 @@ function Home() {
                 </div>
                 <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6'>
                     <div>
-                        <a href='https://github.com/wwwdotfriend/tomenet' target='_blank'>
-                            <div className='overflow-hidden rounded-lg relative group mb-3'>
-                                <img src={tomenetImg} className='transition duration-300 group-hover:scale-120'></img>
-                                <div className='absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-                                    <img src={externalLink} className='w-10 h-10' />
-                                </div>
-                            </div>
-                        </a>
-                        <h2 className='mt-2'>TomeNet</h2>
-                        <p className='text-theme-subtle'>A React/Tailwind dashboard and social media to supplement my homebrew D&D campaign.</p>
-                    </div>
-                    <div>
-                        <a href='https://github.com/wwwdotfriend/game-faces' target='_blank'>
-                            <div className='overflow-hidden rounded-lg relative group mb-3'>
-                                <img src={gameFacesImg} className='transition duration-300 group-hover:scale-120'></img>
-                                <div className='absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-                                    <img src={externalLink} className='w-10 h-10' />
-                                </div>
-                            </div>
-                        </a>
-                        <h2 className='mt-2'>Game Faces</h2>
-                        <p className='text-theme-subtle'>A lightweight portrait switcher for Foundry Virtual Tabletop to enhance table RP.</p>
-                    </div>
-                    <div>
-                        <a href='https://internetfriendstudios.itch.io/potion-seller' target='_blank'>
-                            <div className='overflow-hidden rounded-lg relative group mb-3'>
-                                <img src={potionsellerImg} className='transition duration-300 group-hover:scale-120'></img>
-                                <div className='absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-                                    <img src={externalLink} className='w-10 h-10' />
-                                </div>
-                            </div>
-                        </a>
-                        <h2 className='mt-2'>Potion Seller</h2>
-                        <p className='text-theme-subtle'>A physics-based alchemy game created in 7-days for Pirate Jam 2025.</p>
-                    </div>
-                    <div>
-                        <a href="https://internetfriendstudios.itch.io/cyclethon-america" target='_blank'>
-                            <div className='overflow-hidden rounded-lg relative group mb-3'>
-                                <img src={monkeymanImg} className='transition duration-300 group-hover:scale-120'></img>
-                                <div className='absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-                                    <img src={externalLink} className='w-10 h-10' />
-                                </div>
-                            </div>
-                        </a>
-                        <h2 className='mt-2'>Cyclethon America</h2>
-                        <p className='text-theme-subtle'>An infinite runner created in 3-days for Monkey Game Jam 2024.</p>
-                    </div>
-                    <div>
-                        <a href="https://internetfriendstudios.itch.io/just-get-gambling" target='_blank'>
-                            <div className='overflow-hidden rounded-lg relative group mb-3'>
-                                <img src={jggImg} className='transition duration-300 group-hover:scale-120'></img>
-                                <div className='absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-                                    <img src={externalLink} className='w-10 h-10' />
-                                </div>
-                            </div>
-                        </a>
-                        <h2 className='mt-2'>Just Get Gambling!</h2>
-                        <p className='text-theme-subtle'>A game about gambling on the clock. Created in 7-days for Shovel Jam 2025.</p>
-                    </div>
-                    <div>
                         <a href="https://drive.google.com/drive/folders/17DfOy2Wap4Ot3i0NF8uahQkip3DlE-SV?usp=drive_link" target='_blank'>
                             <div className='overflow-hidden rounded-lg relative group mb-3'>
-                                <img src={designImg} className='transition duration-300 group-hover:scale-120'></img>
+                                <img src={designImg} alt="Video and graphic design work samples" className='transition duration-300 group-hover:scale-120' />
                                 <div className='absolute inset-0 bg-[#191724]/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-                                    <img src={externalLink} className='w-10 h-10' />
+                                    <img src={externalLink} alt="" className='w-10 h-10' />
                                 </div>
                             </div>
                         </a>
                         <h2 className='mt-2'>Video & Graphics</h2>
-                        <p className='text-[#908caa]'>A collection of video editing and graphic design work across various projects.</p>
+                        <p className='text-[#908caa]'>A portfolio of video editing, motion graphics, and graphic design work across various projects.</p>
+                    </div>
+                    <div>
+                        <a href='https://github.com/wwwdotfriend/tomenet' target='_blank'>
+                            <div className='overflow-hidden rounded-lg relative group mb-3'>
+                                <img src={tomenetImg} alt="TomeNet project screenshot" className='transition duration-300 group-hover:scale-120' />
+                                <div className='absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+                                    <img src={externalLink} alt="" className='w-10 h-10' />
+                                </div>
+                            </div>
+                        </a>
+                        <h2 className='mt-2'>TomeNet</h2>
+                        <p className='text-theme-subtle'>A full-stack React and Tailwind CSS dashboard and social platform built for managing a homebrew D&D campaign.</p>
+                    </div>
+                    <div>
+                        <a href='https://github.com/wwwdotfriend/game-faces' target='_blank'>
+                            <div className='overflow-hidden rounded-lg relative group mb-3'>
+                                <img src={gameFacesImg} alt="Game Faces project screenshot" className='transition duration-300 group-hover:scale-120' />
+                                <div className='absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+                                    <img src={externalLink} alt="" className='w-10 h-10' />
+                                </div>
+                            </div>
+                        </a>
+                        <h2 className='mt-2'>Game Faces</h2>
+                        <p className='text-theme-subtle'>A lightweight TypeScript module for Foundry Virtual Tabletop that lets players swap character portraits live.</p>
+                    </div>
+                    <div>
+                        <a href='https://internetfriendstudios.itch.io/potion-seller' target='_blank'>
+                            <div className='overflow-hidden rounded-lg relative group mb-3'>
+                                <img src={potionsellerImg} alt="Potion Seller project screenshot" className='transition duration-300 group-hover:scale-120' />
+                                <div className='absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+                                    <img src={externalLink} alt="" className='w-10 h-10' />
+                                </div>
+                            </div>
+                        </a>
+                        <h2 className='mt-2'>Potion Seller</h2>
+                        <p className='text-theme-subtle'>A physics-based alchemy game built with Godot in 7 days for Pirate Jam 2025.</p>
+                    </div>
+                    <div>
+                        <a href="https://internetfriendstudios.itch.io/cyclethon-america" target='_blank'>
+                            <div className='overflow-hidden rounded-lg relative group mb-3'>
+                                <img src={monkeymanImg} alt="Cyclethon America project screenshot" className='transition duration-300 group-hover:scale-120' />
+                                <div className='absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+                                    <img src={externalLink} alt="" className='w-10 h-10' />
+                                </div>
+                            </div>
+                        </a>
+                        <h2 className='mt-2'>Cyclethon America</h2>
+                        <p className='text-theme-subtle'>An infinite runner built with Godot in 3 days for Monkey Game Jam 2024.</p>
+                    </div>
+                    <div>
+                        <a href="https://internetfriendstudios.itch.io/just-get-gambling" target='_blank'>
+                            <div className='overflow-hidden rounded-lg relative group mb-3'>
+                                <img src={jggImg} alt="Just Get Gambling project screenshot" className='transition duration-300 group-hover:scale-120' />
+                                <div className='absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+                                    <img src={externalLink} alt="" className='w-10 h-10' />
+                                </div>
+                            </div>
+                        </a>
+                        <h2 className='mt-2'>Just Get Gambling!</h2>
+                        <p className='text-theme-subtle'>A time-management gambling game built with Godot in 7 days for Shovel Jam 2025.</p>
                     </div>
                 </div>
             </div>
