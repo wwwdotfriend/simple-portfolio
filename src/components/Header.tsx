@@ -1,4 +1,4 @@
-import dogImg from "../assets/img/dog.jpg"
+import portraitImg from '../assets/img/portrait.webp'
 
 interface HeaderProps {
     onContactClick: () => void
@@ -11,7 +11,7 @@ export default function Header({ onContactClick }: HeaderProps) {
                     <div className="flex-1 md:flex md:items-center md:gap-12">
                         <a className="block group" href="/">
                             <span className="sr-only">Home</span>
-                            <img src={dogImg} className="rounded-full w-16 h-16 transition duration-300 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(196,167,231,0.6)]"></img>
+                            <img src={portraitImg} className="rounded-full w-16 h-16 transition duration-300 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(196,167,231,0.6)]"></img>
                         </a>
                     </div>
 
