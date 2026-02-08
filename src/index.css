@@ -1,14 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 @import "tailwindcss";
 
+/* Dark theme (Moon) - default */
 :root {
+  --theme-base: #232136;
+  --theme-surface: #2a273f;
+  --theme-overlay: #393552;
+  --theme-muted: #6e6a86;
+  --theme-subtle: #908caa;
+  --theme-text: #e0def4;
+  --theme-love: #eb6f92;
+  --theme-gold: #f6c177;
+  --theme-rose: #ea9a97;
+  --theme-pine: #3e8fb0;
+  --theme-foam: #9ccfd8;
+  --theme-iris: #c4a7e7;
+  --theme-hl-low: #2a283e;
+  --theme-hl-med: #44415a;
+  --theme-hl-high: #56526e;
+  --theme-iris-glow: rgba(196, 167, 231, 0.6);
+  --theme-icon-hover: #c4a7e7;
+
   font-family: 'Fredoka', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: dark;
-  color: #e0def4;
-  background-color: #191724;
+  color: var(--theme-text);
+  background-color: var(--theme-base);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,11 +35,54 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Light theme (Dawn) */
+:root.light {
+  --theme-base: #faf4ed;
+  --theme-surface: #fffaf3;
+  --theme-overlay: #f2e9e1;
+  --theme-muted: #9893a5;
+  --theme-subtle: #797593;
+  --theme-text: #575279;
+  --theme-love: #b4637a;
+  --theme-gold: #ea9d34;
+  --theme-rose: #d7827e;
+  --theme-pine: #286983;
+  --theme-foam: #56949f;
+  --theme-iris: #907aa9;
+  --theme-hl-low: #f4ede8;
+  --theme-hl-med: #dfdad9;
+  --theme-hl-high: #cecacd;
+  --theme-iris-glow: rgba(144, 122, 169, 0.6);
+  --theme-icon-hover: #ea9d34;
+
+  color-scheme: light;
+}
+
+@theme {
+  --color-theme-base: var(--theme-base);
+  --color-theme-surface: var(--theme-surface);
+  --color-theme-overlay: var(--theme-overlay);
+  --color-theme-muted: var(--theme-muted);
+  --color-theme-subtle: var(--theme-subtle);
+  --color-theme-text: var(--theme-text);
+  --color-theme-love: var(--theme-love);
+  --color-theme-gold: var(--theme-gold);
+  --color-theme-rose: var(--theme-rose);
+  --color-theme-pine: var(--theme-pine);
+  --color-theme-foam: var(--theme-foam);
+  --color-theme-iris: var(--theme-iris);
+  --color-theme-hl-low: var(--theme-hl-low);
+  --color-theme-hl-med: var(--theme-hl-med);
+  --color-theme-hl-high: var(--theme-hl-high);
+  --color-theme-icon-hover: var(--theme-icon-hover);
+}
+
 body {
   margin: 0 auto;
   display: flex;
   min-width: 320px;
   min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1 {
