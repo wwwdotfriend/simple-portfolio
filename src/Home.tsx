@@ -8,6 +8,7 @@ import gameFacesImg from "./assets/img/game-faces.webp"
 import potionsellerImg from "./assets/img/potionseller.webp"
 import monkeymanImg from "./assets/img/monkeyman.webp"
 import jggImg from "./assets/img/jgg.webp"
+import designImg from "./assets/img/design.webp"
 
 function Home() {
     const [contactOpen, setContactOpen] = useState(false)
@@ -103,6 +104,18 @@ function Home() {
                         </a>
                         <h2 className='mt-2'>Just Get Gambling!</h2>
                         <p className='text-[#908caa]'>A game about gambling on the clock. Created in 7-days for Shovel Jam 2025.</p>
+                    </div>
+                    <div>
+                        <a href="https://drive.google.com/drive/folders/17DfOy2Wap4Ot3i0NF8uahQkip3DlE-SV?usp=drive_link" target='_blank'>
+                            <div className='overflow-hidden rounded-lg relative group mb-3'>
+                                <img src={designImg} className='transition duration-300 group-hover:scale-120'></img>
+                                <div className='absolute inset-0 bg-[#191724]/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+                                    <img src={externalLink} className='w-10 h-10' />
+                                </div>
+                            </div>
+                        </a>
+                        <h2 className='mt-2'>Video & Graphics</h2>
+                        <p className='text-[#908caa]'>A collection of video editing and graphic design work across various projects.</p>
                     </div>
                 </div>
             </div>
