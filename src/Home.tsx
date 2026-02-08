@@ -3,11 +3,11 @@ import './Home.css'
 import Header from "./components/Header"
 import ContactCard from "./components/ContactCard"
 import externalLink from "./assets/img/external_link.svg"
-import tomenetImg from "./assets/img/tomenet.jpg"
-import gameFacesImg from "./assets/img/game-faces.jpg"
-import potionsellerImg from "./assets/img/potionseller.jpg"
-import monkeymanImg from "./assets/img/monkeyman.jpg"
-import jggImg from "./assets/img/jgg.jpg"
+import tomenetImg from "./assets/img/tomenet.webp"
+import gameFacesImg from "./assets/img/game-faces.webp"
+import potionsellerImg from "./assets/img/potionseller.webp"
+import monkeymanImg from "./assets/img/monkeyman.webp"
+import jggImg from "./assets/img/jgg.webp"
 
 function Home() {
     const [contactOpen, setContactOpen] = useState(false)
